@@ -1,0 +1,32 @@
+[
+  {
+    "question": "這台的 CPU 是什麼？",
+    "expected_key": "中央處理器",
+    "expected_keywords": ["Intel", "Ultra 9", "275HX"]
+  },
+  {
+    "question": "What GPU does this laptop have?",
+    "expected_key": "顯示晶片",
+    "expected_keywords": ["RTX", "5090", "Laptop GPU"]
+  },
+  {
+    "question": "Does it support Wi-Fi 7?",
+    "expected_key": "通訊",
+    "expected_keywords": ["Wi-Fi 7", "802.11be", "WIFI 7"]
+  },
+  {
+    "question": "右側有哪些連接埠？",
+    "expected_key": "連接埠-Right Side",
+    "expected_keywords": ["Type-A", "Thunderbolt", "MicroSD", "Audio Jack"]
+  },
+  {
+    "question": "How much battery capacity does it have?",
+    "expected_key": "電池",
+    "expected_keywords": ["99Wh"]
+  },
+  {
+    "question": "Does it have Thunderbolt 5?",
+    "expected_key": "連接埠-Left Side",
+    "expected_keywords": ["Thunderbolt 5", "Thunderbolt™5"]
+  }
+]
