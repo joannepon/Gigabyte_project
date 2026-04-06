@@ -88,7 +88,7 @@ The parsed result is stored as structured JSON:
 {
   "key": "中央處理器",
   "value": "Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)"
-}
+}```
 
 ### Retrieval and Generation
 
