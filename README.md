@@ -62,7 +62,7 @@ This significantly reduces the need for LLM usage.
 
 ## 3. System Design
 
-## Data Parsing
+### Data Parsing
 
 The product specification is treated as **structured data** rather than free-form text.  
 The goal of this stage is to convert the raw specification into clean **key-value pairs**, so that each field can be retrieved and answered independently.
@@ -88,7 +88,8 @@ The parsed result is stored as structured JSON:
 {
   "key": "中央處理器",
   "value": "Intel® Core™ Ultra 9 Processor 275HX (36MB cache, up to 5.4 GHz, 24 cores, 24 threads)"
-}```
+}
+```
 
 ### Retrieval and Generation
 
@@ -148,6 +149,7 @@ stream = llm(prompt, stream=True)
 for chunk in stream:
     token = chunk["choices"][0]["text"]
     print(token, end="", flush=True)
+```
 
 ---
 
@@ -234,12 +236,21 @@ This project uses `uv` for environment management.
 
 ```bash
 uv sync
-Step 2: Prepare data
+```
+
+### Step 2: Prepare data
 
 Place the raw specification file in:
-
+```bash
 data/raw_spec.txt
-Step 3: Run the system
+```
+
+### Step 3: Run the system
+```bash
 uv run python src/main.py
-Step 4: Run evaluation
+```
+
+### Step 4: Run evaluation
+```bash
 uv run python eval/evaluate.py
+```
